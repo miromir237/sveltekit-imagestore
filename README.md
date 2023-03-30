@@ -1,6 +1,6 @@
-# create-svelte
+# SvelteKit Imagestore
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Very basic image store app using SvelteKit, Prisma and SQLite.
 
 ## Creating a project
 
