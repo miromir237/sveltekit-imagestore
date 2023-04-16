@@ -1,6 +1,7 @@
 <script lang="ts">
     import type { PageData } from './$types';
     import { page } from '$app/stores';
+    import Pagination from '$lib/components/Pagination.svelte';
     
     export let data: PageData;
     
@@ -33,11 +34,8 @@
         {/each}
     </div>
     
-    <div class="btn-group pt-4">
-      {#each Array(totalPages) as _, i}
-        <a href="/list/{i + 1}" class={currentPage === i ? 'btn btn-primary' : 'btn'}>{i + 1}</a>
-      {/each}
-    </div>
+    <!-- Pagination component -->
+    <Pagination {totalPages} {currentPage} />
   
 </div>
 
